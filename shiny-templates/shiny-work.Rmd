@@ -21,7 +21,7 @@ shiny.dir <- "shiny-apps/"
 shiny.app <- "hello-world"
 shinyAppDir(appDir = paste(shiny.dir, shiny.app, sep=""),
   options=list(
-    width="100%", height=700
+    width="100%", height=400
   )
 )
 ```
@@ -39,7 +39,7 @@ shiny.dir <- "shiny-apps/"
 shiny.app <- "hello-world-1a"
 shinyAppDir(appDir = paste(shiny.dir, shiny.app, sep=""),
   options=list(
-    width="100%", height=700
+    width="100%", height=400
   )
 )
 ```
@@ -100,7 +100,32 @@ shinyAppDir(appDir = paste(shiny.dir, shiny.app, sep=""),
 
 ## Quest 4
 
-In Quest 4, I {created my own/modified a Shiny app from <src>}...
+In Quest 4, I changed the styling of my app using Cascading Style Sheets (CSS).
+This [site](https://shiny.rstudio.com/articles/css.html) explains how.
+Here, I created a `www/` directory under the `correlation-app-2a` folder.
+Then, I downloaded a theme (`.css` file) from <https://bootswatch.com/>.
+I copied this theme to the `correlation-app-2a/www/` directory.
+Finally, I added the theme to the `fluidPage()` call in `app.R`.
+
+I wasn't happy with the stock theme backgrounds, so I created my own file `rog1.css`, set `background-color: #aaa` (a light gray), and then called this file from the `fluidPage()` function in `app.R` using the `includeCSS()` function.
+
+The next page shows the results.
+
+---
+
+```{r, echo=FALSE}
+shiny.dir <- "shiny-apps/"
+shiny.app <- "correlation-app-2a"
+shinyAppDir(appDir = paste(shiny.dir, shiny.app, sep=""),
+  options=list(
+    width="100%", height=500
+  )
+)
+```
+
+## Quest 5
+
+In Quest 5, I {created my own/modified a Shiny app from <src>}...
 
 ```{r, echo=FALSE}
 # You will need to uncomment this and edit it for this chunk to run.
