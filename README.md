@@ -8,6 +8,6 @@ The files now have their own repo for easier access by students.
 ## Instructions
 
 - Clone the repository.
-- From the repository's root directory, render the accompanying R Markdown file using `rmarkdown::render("shiny-templates/shiny-work.Rmd"). *Note:* The file contains embedded Shiny app code that requires a local version of R to work.
+- From the repository's root directory, render the accompanying R Markdown file using `rmarkdown::render("shiny-templates/shiny-work.Rmd")`. *Note:* The file contains embedded Shiny app code that requires a local version of R to work.
 - The resulting file is an interactive HTML document that provides further guidance.
 
